@@ -6,7 +6,7 @@ if n < 0.5
     error('Please use the LQW (right quantile weight) function.')
 end
 
-w = (prctile(y, (1+n)/2) + prctile(y, 1 - n/2) - 2*prctile(y, 0.75))/ ...
-    (prctile(y, (1+n)/2) - prctile(y, 1 - n/2));
+w = (prctile(y, (100+n)/2) + prctile(y, 100 - n/2) - 2*prctile(y, 75))/ ...
+    (prctile(y, (100+n)/2) - prctile(y, 100 - n/2));
 
 end
