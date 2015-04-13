@@ -17,5 +17,5 @@ l25 = qw(y, 25);
 r75 = qw(y, 75);
 
 % Test assertions
-assert(l25 > -0.15 && l25 < -0.14);
-assert(r75 < +0.15 && r75 > +0.14);
+assert(l25 < 0.15 && l25 > 0.14);
+assert(r75 < 0.15 && r75 > 0.14);

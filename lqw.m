@@ -6,7 +6,7 @@ if n > 50
     error('Please use the RQW (right quantile weight) function.')
 end
 
-w = (prctile(y, (100-n)/2) + prctile(y, n/2) - 2*prctile(y, 25))./ ...
-    (prctile(y, (100-n)/2) - prctile(y, n/2));
+w = -(prctile(y, (100-n)/2) + prctile(y, n/2) - 2*prctile(y, 25))./ ...
+     (prctile(y, (100-n)/2) - prctile(y, n/2));
 
 end

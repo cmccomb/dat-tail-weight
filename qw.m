@@ -3,7 +3,7 @@ function w = qw(y, n)
 %   w = QW(y, n) returns the RQW if n > 50, and the LQW if n < 50.
 
 if n == 50
-    error('We should have a talk about your life choices. Using n = 50 is not a good measure of tail weight.');
+    warning('We should have a talk about your life choices. Using n = 50 is not a good measure of tail weight.');
 end
 
 if n < 50
